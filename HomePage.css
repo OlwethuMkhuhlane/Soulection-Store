@@ -1,0 +1,501 @@
+body {
+    background: #fff;
+    color: #666666;
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    color: #1dc8cd;
+    transition: 0.5s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #1dc9ce;
+    outline: none;
+    text-decoration: none;
+}
+
+.collapsible {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    width: 20%;
+    border: none;
+    text-align: left;
+    outline: solid;
+    font-size: 10px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: lime;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: initial;
+    background-color: #f1f1f1;
+}
+
+img {
+    padding: 5px; 
+    /*added padding for all pictures on the main page(Home page)*/
+    width: 135px;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+
+}
+
+body,
+html {
+    height: auto;
+    margin: 0;
+    color: #ffff9f;
+    background-color: #ffcccc
+        /*changed background-color*/
+}
+
+section {
+    background-color: #ccffff;
+    border-image-width: 15px;
+}
+
+h1 {
+    color: black;
+}
+
+p {
+    color: rgb(0, 0, 255);
+}
+
+
+
+p {
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+
+
+#mainPic {
+    list-style-image: center;
+}
+
+
+.listLinks {
+    list-style-type: none;
+    text-align: center;
+    font-family: cursive;
+    padding: 0;
+}
+
+.listLinks a:hover {
+    color: #ffff9f;
+}
+
+.listLinks li {
+    display: inline;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    clear: both;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+nav {
+    padding: 3px;
+    list-style-type: none;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+nav li {
+    float: none;
+    padding-right: 100px;
+    padding-left: 150px;
+    display: inline;
+}
+
+nav ul {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 1.3em;
+}
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+
+/* Sections Header
+--------------------------------*/
+
+.section-header .section-title {
+    font-size: 32px;
+    color: #111;
+    text-align: center;
+    font-weight: 400;
+}
+
+.section-header .section-description {
+    text-align: center;
+    padding-bottom: 40px;
+    color: #777;
+    font-style: italic;
+}
+
+.section-header .section-divider {
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #1dc8cd;
+    background: linear-gradient(0deg, #1dc8cd 0%, #55fabe 100%);
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/* Section with background
+--------------------------------*/
+
+.section-bg {
+    background: #eff5f5;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer {
+    background: #fff;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+    color: #333;
+    font-size: 14px;
+}
+
+#footer .credits {
+    font-size: 13px;
+    color: #888;
+}
+
+#footer .footer-links a {
+    color: #666;
+    padding-left: 15px;
+}
+
+#footer .footer-links a:first-child {
+    padding-left: 0;
+}
+
+#footer .footer-links a:hover {
+    color: #1dc8cd;
+}
+
+@media (min-width: 769px) {
+    #features .features-img {
+        padding-top: 120px;
+        margin-top: -200px;
+    }
+
+    #call-to-action .cta-btn-container {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1025px) {
+    #intro {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 768px) {
+    #header #logo h1 {
+        font-size: 28px;
+        margin-top: 0;
+    }
+
+    #header #logo img {
+        max-height: 40px;
+    }
+
+    #intro h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    #intro p {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+    #nav-menu-container {
+        display: none;
+    }
+
+    #mobile-nav-toggle {
+        display: inline;
+    }
+
+    #about .about-img {
+        height: auto;
+    }
+
+    #about .about-img img {
+        margin-left: 0;
+        padding-bottom: 30px;
+    }
+
+    #advanced-features .advanced-feature-img-right,
+    #advanced-features .advanced-feature-img-left {
+        max-width: 50%;
+    }
+
+    #faq #faq-list a {
+        font-size: 18px;
+    }
+
+    #faq #faq-list i {
+        top: 13px;
+    }
+}
+
+@media (max-width: 767px) {
+    #intro .product-screens .product-screen-1 {
+        position: static;
+        padding-top: 30px;
+    }
+
+    #intro .product-screens .product-screen-2,
+    #intro .product-screens .product-screen-3 {
+        display: none;
+    }
+
+    #advanced-features .advanced-feature-img-right,
+    #advanced-features .advanced-feature-img-left {
+        max-width: 100%;
+        float: none;
+        padding: 0 0 30px 0;
+    }
+
+    #more-features .box {
+        margin-bottom: 20px;
+    }
+
+    #more-features .icon {
+        float: none;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    #more-features h4,
+    #more-features p {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    img {
+        border: 1px solid #ddd;
+        /* Gray border */
+        border-radius: 4px;
+        /* Rounded border */
+        padding: 5px;
+        /* Some padding */
+        width: 150px;
+        /* Set a small width */
+    }
+
+    /* Add a hover effect (blue shadow) */
+    img:hover {
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
+}
+
+
+img {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 150px;
+    }
+
+    img:hover {
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
+
+body,
+html {
+    height: 80%;
+    margin: 8%;
+    color: black;
+    background-color: #ffcccc /*changed background-color*/
+    font-family: Arial;
+    font-size: 17px;
+    padding: 8px;
+}
+
+    h1 {
+        color: black;
+    }
+
+    p {
+        color: rgb(0, 0, 255);
+    }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+.adder{
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ALBUMS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        img {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 150px;
+    }
+
+    img:hover {
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+        /*function zooms image in when hovered*/
+    .zoom { 
+      padding: 50px;
+      background-color: pink;
+      transition: transform .2s;
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+    }
+
+    .zoom:hover {
+      -ms-transform: scale(1.5); /* IE 9 */
+      -webkit-transform: scale(1.5); /* Safari 3-8 */
+      transform: scale(1.5); 
+    }
+
+    body,
+    html {
+        height: 100%;
+        margin: 2%;
+        color: white;
+        background-color: #ffcccc /*changed background-color*/
+    }
+
+    h1 {
+        color: black;
+    }
+
+    p {
+        color: rgb(0, 0, 255);
+    }
+    div {
+      width: all;
+      height: all;
+      background-color: #ffcccc;
+      animation-name: example;
+      animation-duration: 5s;
+      background-repeat: repeat;
+    }
+
+    @-webkit-keyframes example {
+      from {background-color: #ffcccc;}
+      to {background-color: yellow;}
+    }
+
+/*/* Standard syntax */
+@keyframes example {
+  from {background-color: #ffcccc;}
+  to {background-color: yellow;}
+    </style>
+</head>
+
+<body style="color: black;">
+    <h1 style="text-align: center;text-decoration-color: black; font-style: italic;"><b>Soulection tracklist</b></h1>
+    <p style="text-align: center;">This page consist of all available tapes by the soulection crew.</p>
+    <p style="text-align: center; font-style: oblique;">Take time and explore and add what you want to your cart</p>
+    <p style="text-align: center;">As it has been since the start, Soulection is rooted in discovering some of the most forward thinking creators worldwide.
+        <br>
+        Our Soulection White Label series (SWL) is our way to take those discoveries and spread their sound far and wide through official releases, in digital form. <br>
+        Each White Label is a 2-4 track EP’s that highlights the true craftsmanship and uniqueness of an artist. <br>
+        With a mission of always bringing you the undiscovered Sounds of Tomorrow, we present the White Label series to expose as much talent as possible.<br>
+        On another note, we are Happy to introduce the Black Label Series, which is a series focused on highlighting rising vocalists/rappers.<br>
+        There’s nothing like ending your week with an amazing project or artist you’ve never heard of, <br>
+        so each new White Label is always dropped on Fridays, for #WhiteLabelFriday.
+        <br>Check out all of our White and Black Label releases below.</p>
+    <div class="container">
+        <!-- For a basic set of thumbnails, used the .thumbnail class and insert the images into a grid. -->
+        <div class="row">
+            <div class="col-sm-2">
+                <a target="_blank" href="Albums/DPAT - in bloom.jpg">
+                    <img class="img-thumbnail" src="Albums/DPAT - in bloom.jpg" alt="album1"></a>
+                <p>DPAT - in bloom</p>
+                <p class="price">R99</p>
+                <button id="259.99"  onclick="addCan6ToCart()" class="btn btn-dark shadow">Add to Cart</button>
+            </div>
+            <div class="col-sm-2">
+                <a target="_blank" href="Albums/Esta - Gradient.jpg">
+                    <img class="img-thumbnail" src="Albums/Esta - Gradient.jpg" alt="album1"></a>
+                <p>Esta - Gradient : R99</p>
+                <p class="price">R239.99</p>
+                <button id="239.99"  onclick="addCan5ToCart()" class="btn btn-dark shadow">Add to Cart</button>
+            </div>
+            <div class="col-sm-2">
+                <a target="_blank" href="Albums/Esta - Luci.jpg">
+                    <img class="img-thumbnail" src="Albums/Esta - Luci.jpg" alt="album1"></a>
+                <p>Esta - Luci : R89</p>
+                <button id ="adder">add to cart</button>
+            </div>
+            <div class="col-sm-2">
+                <a target="_blank" href="Albums/Evil Needle & Sivey - Constructive interference">
+                    <img class="img-thumbnail" src="Albums/Evil Needle & Sivey - Constructive interference.jpg" alt="album cover"></a>
+                <p>Evil Needle & Sivey - Constructive interference : R119</p>
+            </div>
+            <div class="col-sm-2">
+                <a target="_blank" href="Albums/Lakim - Elements.jpg">
+                    <img class="img-thumbnail" src="Albums/Lakim - Elements.jpg" alt="album cover"></a>
+                <p>Lakim - Elements : R99</p>
+            </div>
+            <div class="col-sm-2">
+                <a target="_blank" href="Albums/LAKIM - Frequencies.jpg">
+                    <img class="img-thumbnail" src="Albums/LAKIM - Frequencies.jpg" alt="album1"></a>
+                <p>LAKIM - Frequencies : R79</p>
+            </div>
+            <div class="col-sm-2">
+                <a target="_blank" href="Albums/Sango - There's Eugene.jpg">
+                    <img class="img-thumbnail" src="Albums/Sango - There's Eugene.jpg" alt="album1"></a>
+                <p>Sango - There's Eugene : R89</p>
+            </div>
+            <div class="col-sm-2">
+                <a target="_blank" href="Albums/Soulection - 100k.jpg">
+                    <img class="img-thumbnail" src="Albums/Soulection - 100k.jpg" alt="album1"></a>
+                <p>Soulection - 100k : R89</p>
+            </div>
+            <div class="col-sm-2">
+                <a target="_blank" href="Albums/Soulection - Love is king.jpg">
+                    <img class="img-thumbnail" src="Albums/Soulection - Love is king.jpg" alt="album1"></a>
+                <p>Soulection - Love is king : R149</p>
+            </div>
+            <div class="col-sm-2">
+                <a target="_blank" href="Albums/SPZRKT & Sango - Hours Spent loving you.jpg">
+                    <img class="img-thumbnail" src="Albums/SPZRKT & Sango - Hours Spent loving you.jpg" alt="album1"></a>
+                <p>SPZRKT & Sango - Hours Spent loving you : R89</p>
+            </div>
+            <div class="col-sm-2">
+                <a target="_blank" href="Albums/Ta-Ku - 50 Days for Dilla Tape 2.jpg">
+                    <img class="img-thumbnail" src="Albums/Ta-Ku - 50 Days for Dilla Tape 2.jpg" alt="album1"></a>
+                <p>Ta-Ku - 50 Days for Dilla Tape 2 : R109</p>
+            </div>
+            <div class="col-sm-2">
+                <a target="_blank" href="Albums/Tom Misch - Beat Tape 2.jpg">
+                    <img class="img-thumbnail" src="Albums/Tom Misch - Beat Tape 2.jpg" alt="album1"></a>
+                <p>Tom Misch - Beat Tape 2 : R59</p>
+            </div>
+        </div>
+    </div>
+    <div class="zoom">
+        <img src="images/igor.jpg" alt="Igor album cover" style="float: right; width 120px;height:150px;text-align: none;">
+    </div>
+    <p style="text-align: right;">
+        Here is a link to the latest album by Tyler the creator. <br> He gifted it to the team and gave us right to sell it <br>after we promoted his last album on our radio show </p><br><br>
+    <h2><br><br>Payment Methods</h2>
+    <p>Please select how you intend to pay your account after purchase</p>
+    <!-- form in a block with difeent color -->
+    <form style="background-color: #F0FFFF">
+        <input type="radio" name="Payment" value="Apple Pay" checked> Apple Pay<br>
+        <input type="radio" name="Payment" value="Credit Card"> Credit Card<br>
+        <input type="radio" name="Payment" value="PayPal"> PayPal
+    </form>
+    <!-- Customer review within a block(has background colour) -->
+    <div style="background-color: purple; color: white;padding: 20px">
+        <h2>Customer Comments</h2>
+        <p style="color: black;">“I just wanted to share a quick note and let you know that you guys do a really good job. I’m glad I decided to work with your website for streaming music. It’s really great how easy your website is to download and manage. I never have any problem at all. It used to take me an hour or more to download an album.<br> Thanks, guys!” - Tracy Espinha</p>
+        <p style="color: black;">“You made it so simple. This site is so much faster and easier to work with than other sites. I just choose the page, get directed to the streaming link, and i start streaming quick and easy. And by the way, i love the music selection. :-)<br>Thanks Team!” - Morgan F. Duly</p>
+    </div>
+    <p style="text-align: center;">for more soulection sounds : <a href="https://soulection.com/">click here</a></p>
+    <p style="text-align: left;">SOULECTION IS LOVE.</p>
+    <p style="text-align: center;">SOULECTION IS WORLDWIDE.</p>
+    <p style="text-align: right;">SOULECTION IS A MOVEMENT.</p>
+    <!-- A fluid container that uses the full witdh -->
+</body>
+<script type="text/javascript" src ="catalogue.js"></script>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- used thumbnail on other link to home page(albums) -->
+    <!-- have the hover table in the contacts page -->
+    <title>My online store page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+    </style>
+    <link rel="stylesheet" type="text/css" href="HomePage.css">
+    <!--style to overright some of the bootstrap styling-->
+</head>
+
+<body class="container">
+    <header>
+        <h1 id="mainHeading" align="center">Soulection</h1>
+        <h4 align="center">Sounds Of Tomorrow</h4>
+    </header>
+    <img id="mainPic" src="Albums/Folder_New18.jpg" alt="Soulection logo" height="200px" width="auto" class="center" />
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark float-lg-none">
+        <ul class="listContact">
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="Albums.html">Album Selection</a></li>
+            <li><a href="Contact.html">Contact</a></li>'
+            <li><a href="Checkout.html">Checkout</a></li>
+        </ul>
+    </nav>
+    <!-- first paragraph in italics, white color -->
+    <p style="font-style: italic;font-size: 5; text-align: center;background-color: #404040;color: white;">Page for music at affordable prices</p>
+    <!-- second paragraph in oblique style, blue color -->
+    <p style="font-style: oblique;font-size: 5; text-align: center;background-color: #404040;color: blue;">Browse through to the Albums for the tapes</p>
+    <!--     Using 'div' elements to implement the Bootstrap grid.
+ -->
+    <div class="row">
+        <div class="col-sm pb-6">
+            <img src="images/albums.png" class="img-fluid mx-auto d-block mt-4 mb-2 rounded-circle" alt="Albums" />
+            <h2 class="articleHeadings">Albums</h2>
+            <p>More on the albums</p>
+            <a href="Albums.html" class="btn btn-success">More</a>
+        </div>
+        <div class="col-sm pb-6">
+            <img src="images/contact.png" class="img-fluid mx-auto d-block mt-4 mb-2 rounded-circle" alt="contact" />
+            <h2 class="articleHeadings">Contact Us</h2>
+            <p>About the crew</p>
+            <a href="Contact.html" class="btn btn-success">See here</a>
+        </div>
+    </div>
+    <p style="font-size: 8; font-style: italic; text-align: center;color: black;"><br>Some of the music producers of soulection</p>
+    <div class="row">
+        <div class="col-sm pb-2">
+            <h2 style="color: #ffff80;">Sango(Musician)</h2>
+            <button class="collapsible">More about Sango</button>
+            <div class="content">
+                <p>Kai Asa Savon Wright (born October 1, 1991), known by his stage name Sango, is an American DJ and record producer based out of Seattle, Washington. Sango began his career in 2010. Sango is also part of AGO (pronounced as individual letters), a team of rappers, singers and producers that he met when he moved to Michigan from Seattle. His music consists of a wide variety of styles, including Rap, Chillhop, R&B, Brazilian Funk and more.</p>
+            </div>
+        </div>
+        <div class="col-sm pb-2">
+            <h2 style="color: #ffff80;">Kaytranada</h2>
+            <button class="collapsible">More about Kaytra</button>
+            <div class="content">
+                <p>Louis Kevin Celestin (born August 25, 1992), known by his stage name Kaytranada, (stylized as KAYTRANADA, shortened as KAYTRA), is a Haitian-Canadian DJ and record producer. Celestin began his career under the alias Kaytradamus in 2010. He is part of the hip hop duo The Celestics. He released two projects as Kaytradamus before changing his name to 'Kaytranada' in 2012. Kaytranada has released a total of thirteen projects and forty-one remixes. Kaytranada has toured more than 50 Canadian, American, European and Australian cities</p>
+            </div>
+        </div>
+        <div class="col-sm pb-2">
+            <h2 style="color: #ffff80;">Tay Iwar</h2>
+            <button class="collapsible">More about Tay</button>
+            <div class="content">
+                <p>Austin Iornongu Iwar (born June 9, 1997), professionally known by his stage name Tay Iwar, is a Nigerian singer, songwriter, audio engineer and record producer. He won Choice Producer at 2014 Nigerian Teen Choice Award and Choice Male Artist at 2015 Nigerian Teen Choice Awards held in Abuja, Nigeria. He rose to prominence in 2016 after M.I released a re-fix of his song "The Box" under his mixtape Illegal Music 3: The Finale. In 2018, OkayAfrica ranked his song "Space" & "Sugardaddy" fourth on its list of "13 Best Nigerian Songs of the Month" in September 2018.</p>
+            </div>
+        </div>
+        <div class="col-sm pb-2">
+            <h2 style="color: #ffff80;">GoldLink</h2>
+            <button class="collapsible">More about GoldLink</button>
+            <div class="content">
+                <p>D'Anthony Carlos (born May 17, 1993), better known by his stage name GoldLink, is an American rapper. In 2014, he released his debut mixtape, The God Complex, which received critical acclaim. In June 2015, he was chosen as part of the XXL Freshman Class. In October 2015, GoldLink released his second mixtape, And After That, We Didn't Talk, which was supported by the singles, "Dance on Me" and "Spectrum". His debut studio album, At What Cost, was released on March 24, 2017, to positive reviews. The album's lead single, "Crew", has peaked at number 45 on the US Billboard Hot 100 chart, as well as earned him his first Grammy nomination.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p> &copy; Hyperion Development.&nbsp;&nbsp; All Rights Reserved.&nbsp;&nbsp; Proudly created by Twenty5th</p>
+        <p> &copy; Soulection Sounds. &nbsp;&nbsp; All Rights Reserved.&nbsp;&nbsp; </p>
+    </footer>
+    <!-- Script code in java script -->
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    // needed to use the java-script for the drop down on getting more infor. 
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+    </script>
+
+    <script type="text/javascript" src ="catalogue.js"></script>
+</body>
+
+</html>
