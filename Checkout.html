@@ -9,15 +9,70 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="HomePage.css">
+    <!-- <link rel="stylesheet" type="text/css" href="catalogue.css"> -->
+    <style>
+        img {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 150px;
+        }
 
+        img:hover {
+            box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+        }
+
+        body,
+        html {
+            height: 80%;
+            margin: 8%;
+            color: white;
+            background-color: #ffcccc /*changed background-color*/
+        }
+
+        h1 {
+            color: black;
+        }
+
+        p {
+            color: rgb(0, 0, 255);
+        }
+
+    </style>
 </head>
 
-<body>
+<body id="cart-backg" style="color: black;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="HomePage.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Albums.html">Album Selection</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact</a>
+                </li>'
+                <li class="nav-item">
+                    <a class="nav-link" href="Checkout.html">Checkout</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Cart</a>
+                </li>
+        </div>
+        <!--social-media div close-->
+        </li>
+        </ul>
+    </nav>
     <h2>Checkout Form</h2>
     <div class="row">
         <div class="col-75">
             <div class="container">
-                <form action="/action_page.php">
+                <form>
                     <div class="row">
                         <div class="col-50">
                             <h3>Billing Address</h3>
@@ -31,7 +86,7 @@
                             <input type="text" id="city" name="city" placeholder="Durban">
                             <div class="row">
                                 <div class="col-50">
-                                    <label for="state">State</label>
+                                    <label for="state">Province</label>
                                     <input type="text" id="state" name="state" placeholder="NY">
                                 </div>
                                 <div class="col-50">
@@ -70,17 +125,19 @@
                     <label>
                         <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
                     </label>
-                    <input type="submit" class="confirmBtn radioBtn-box shadow p-2 btn-dark" type="button" value="Continue to checkout">
-                   <!--  <button class="confirmBtn radioBtn-box shadow p-2 btn-dark" type="button" value="Continue to checkout" onclick="confirmIt()">Confirm Order</button> -->
-                <br>
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="cart.html">Continue to checkout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </form>
-            </div>
-        </div>
-        <div class="col-25">
-            <div class="container">
-                <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
-                <hr>
-                <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
             </div>
         </div>
     </div>
